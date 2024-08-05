@@ -1,0 +1,33 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li , a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+.container {
+    width: calc(90vw);
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (max-width: 600px) {
+
+}
+@media only screen and (min-width: 600px) {
+
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 992px) {
+
+}
+@media only screen and (min-width: 1200px) {
+
+}
