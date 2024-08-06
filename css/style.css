@@ -97,7 +97,7 @@ html {
   padding-bottom: 3%;
   display: grid;
   grid-template-columns: repeat(2, minmax(300px, 1fr));
-  gap: 5%;
+  gap: 3%;
 }
 .header .nav-list .img {
   width: 100%;
@@ -111,29 +111,100 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: start;
-  gap: 30%;
+  gap: 20%;
   color: var(--main-color);
 }
 .header .nav-list .content .line {
   display: flex;
   flex-direction: column;
   color: var(--main-color);
+  overflow: hidden;
+  width: -webkit-fill-available;
 }
 .header .nav-list .content .line .link {
+    position: relative;
   display: flex;
   flex-direction: row;
   column-gap: 10px;
   width: 160%;
-  padding-bottom: 5%;
-  margin-bottom: 18%;
+  padding-bottom: 12%;
+  padding-top: 12%;
   border-bottom: 1px #ededed solid;
 }
+.header .nav-list .content .line .link::before {
+    position: absolute;
+    opacity: 1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    bottom: 0%;
+    left: -100%;
+    background-color: #d3d3d335 ;
+    transition: all linear var(--main-transition);
+}
+.header .nav-list .content .line .link:hover:before {
+    left: 0;
+}
+
 .header .nav-list .content .line .link i {
-  font-size: 1.8rem;
+    position: relative;
+  font-size: 2rem;
   align-self: center;
+  text-transform: capitalize;
 }
 .header .nav-list .content .line .link a {
-  font-size: 1.6rem;
+    position: relative;
+  font-size: 2rem;
   color: var(--main-color);
   font-weight: bold;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 600px) {
+    .header .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header .container .nav {
+        justify-content: center;
+        gap: 0;
+    }
+    .header .container .nav a {
+        padding: 5%;
+        font-size: 1.6rem;
+    }
+    .header .nav-list {
+        grid-template-columns: 1fr;
+    }
+    .header .nav-list .img {
+        display: none;
+    }
+    .header .nav-list .content {
+        gap: 0;
+        flex-direction: column;
+    }
+    .header .nav-list .content .line {
+        width: 100%;
+    }
+    .header .nav-list .content .line .link { 
+        padding-bottom: 4%;
+        padding-top: 4%;
+    }
+    .header .nav-list .content .line .link i , 
+    .header .nav-list .content .line .link a {
+        font-size: 1.6rem;
+    }
+
+
+}
+@media only screen and (min-width: 600px) {
+
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 992px) {
+
+}
+@media only screen and (min-width: 1200px) {
+
 }
