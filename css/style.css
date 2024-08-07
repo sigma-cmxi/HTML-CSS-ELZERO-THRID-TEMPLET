@@ -27,7 +27,7 @@ html {
   position: relative;
   width: 100vw;
   background-color: white;
-  box-shadow: 0 0 5px 5px rgb(0, 0, 0);
+  box-shadow: 0 0 10px #ddd;
   z-index: 1;
 }
 .header .container {
@@ -139,7 +139,7 @@ html {
   height: 100%;
   bottom: 0%;
   left: -100%;
-  background-color: #d3d3d335;
+  background-color: #fafafa;
   transition: all linear var(--main-transition);
 }
 .header .nav-list .content .line .link:hover:before {
@@ -234,5 +234,82 @@ html {
   .header .nav-list .content .line .link i,
   .header .nav-list .content .line .link a {
     font-size: 1.6rem;
+  }
+}
+.landing {
+  position: relative;
+  background-color: #ececec;
+  height: 80vh;
+}
+.landing .thel {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  background-color: #ececec;
+  bottom: -10%;
+}
+.landing .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0%;
+}
+.landing .container .txt {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  flex: 1;
+}
+.landing .container .txt h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+.landing .container .txt p {
+  color: #777;
+  font-size: 2.3rem;
+}
+.landing .container .img {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  animation-name: updown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+.landing .container .img img {
+  position: relative;
+  bottom:  0;
+  width: 90%;
+}
+@keyframes updown {
+  from {
+    top:-12%;
+  }
+  to {
+    top: 6%
+  }
+}
+@media only screen and (max-width: 992px) {
+  .landing .container .img {
+    display: none;
+  }
+  .landing .container .txt {
+    align-items: center;
+  }
+  .landing .container .txt h1 {
+    white-space: normal;
+    text-align: center;
+  }
+  .landing .container .txt p {
+    text-align: center;
   }
 }
