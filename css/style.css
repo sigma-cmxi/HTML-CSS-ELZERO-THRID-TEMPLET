@@ -240,14 +240,7 @@ html {
   position: relative;
   background-color: #ececec;
   height: 80vh;
-}
-.landing .thel {
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 10vh;
-  background-color: #ececec;
-  bottom: -10%;
+  padding-bottom: 120px;
 }
 .landing .container {
   height: 100%;
@@ -274,6 +267,7 @@ html {
 .landing .container .txt p {
   color: #777;
   font-size: 2.3rem;
+  line-height: 1.5;
 }
 .landing .container .img {
   position: relative;
@@ -287,15 +281,15 @@ html {
 }
 .landing .container .img img {
   position: relative;
-  bottom:  0;
+  bottom: 0;
   width: 90%;
 }
 @keyframes updown {
   from {
-    top:-12%;
+    top: -5%;
   }
   to {
-    top: 6%
+    top: 10%;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -312,4 +306,15 @@ html {
   .landing .container .txt p {
     text-align: center;
   }
+}
+.thel {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 25vh;
+  background-color: #ffffff;
+  bottom: -100px;
+  width: 120%;
+  rotate: -5deg;
+  right: -15px;
 }
