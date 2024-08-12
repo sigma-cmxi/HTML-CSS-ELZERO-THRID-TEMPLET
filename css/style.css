@@ -242,6 +242,41 @@ html {
   height: 80vh;
   padding-bottom: 120px;
 }
+.landing .theback {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  rotate: 90deg;
+  animation-name: uandd;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+}
+.landing .theback a {
+  font-size: 4rem;
+  color: var(--main-color);
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+@keyframes uandd {
+0% {
+  bottom: 0;
+}
+25% {
+  bottom: 2%;
+}
+50% {
+  bottom: 0;
+}
+75% {
+  bottom: 2%;
+}
+100% {
+  bottom: 0;
+}
+}
 .landing .container {
   height: 100%;
   display: flex;
@@ -274,7 +309,7 @@ html {
   display: flex;
   justify-content: end;
   animation-name: updown;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: alternate;
@@ -289,7 +324,7 @@ html {
     top: -5%;
   }
   to {
-    top: 10%;
+    top: 0%;
   }
 }
 @media only screen and (max-width: 992px) {
