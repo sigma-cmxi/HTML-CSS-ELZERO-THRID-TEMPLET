@@ -354,5 +354,97 @@ html {
   }
 }
 .articles {
-  margin: 100px;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+}
+.articles .container {
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
+  gap: 30px;
+}
+.articles .container .card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+  border-radius: 6px;
+  transition: var(--main-transition) linear;
+}
+.articles .container .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 50%)
+
+}
+.articles .container .card .img {
+  max-width: 100%;
+}
+.articles .container .card .img img {
+  max-width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.articles .container .card .txt {
+  padding: 20px;
+  border-bottom: 1px solid #e6e6e7;
+}
+.articles .container .card .txt h3 {
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+}
+.articles .container .card .txt p {
+  color: #777;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.articles .container .card .foot {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.articles .container .card .foot p {
+  font-size: 1.6rem;
+  color: var(--main-color);
+  font-weight: bold;
+}
+.articles .container .card .foot .icon  {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+.articles .container .card .foot .icon i {
+  font-size: 1.4rem;
+  color: var(--main-color);
+}
+.articles .container .card:hover .foot .icon {
+animation: rightleft .5s infinite;
+
+}
+@keyframes rightleft {
+from {
+  right: 20px;
+}
+to {
+  right:10px;
+}
+}
+@media only screen and (max-width: 1100px) {
+  .articles .container {
+    grid-template-columns: repeat(3 , 1fr);
+    
+  }
+}
+@media only screen and (max-width:850px) {
+  .articles .container {
+    grid-template-columns: repeat(2 , 1fr);
+    
+  }
+}
+@media only screen and (max-width:650px) {
+  .articles .container {
+    grid-template-columns: repeat(1 , 1fr);
+    
+  }
 }
