@@ -354,8 +354,11 @@ html {
   }
 }
 .articles {
+  position: relative;
+  z-index: 1;
   padding-top: var(--main-padding-top);
   padding-bottom: var(--main-padding-bottom);
+  background-color: white;
 }
 .articles .container {
   display: grid;
