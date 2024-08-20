@@ -272,21 +272,21 @@ html {
   right: -15px;
 }
 @keyframes uandd {
-0% {
-  bottom: 0;
-}
-25% {
-  bottom: 2%;
-}
-50% {
-  bottom: 0;
-}
-75% {
-  bottom: 2%;
-}
-100% {
-  bottom: 0;
-}
+  0% {
+    bottom: 0;
+  }
+  25% {
+    bottom: 2%;
+  }
+  50% {
+    bottom: 0;
+  }
+  75% {
+    bottom: 2%;
+  }
+  100% {
+    bottom: 0;
+  }
 }
 .landing .container {
   height: 100%;
@@ -359,7 +359,7 @@ html {
 }
 .articles .container {
   display: grid;
-  grid-template-columns: repeat(4 , 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(auto-fill, 1fr);
   gap: 30px;
 }
@@ -372,8 +372,7 @@ html {
 }
 .articles .container .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 50%)
-
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 50%);
 }
 .articles .container .card .img {
   max-width: 100%;
@@ -408,7 +407,7 @@ html {
   color: var(--main-color);
   font-weight: bold;
 }
-.articles .container .card .foot .icon  {
+.articles .container .card .foot .icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -419,32 +418,28 @@ html {
   color: var(--main-color);
 }
 .articles .container .card:hover .foot .icon {
-animation: rightleft .5s infinite;
-
+  animation: rightleft 0.5s infinite;
 }
 @keyframes rightleft {
-from {
-  right: 20px;
-}
-to {
-  right:10px;
-}
+  from {
+    right: 20px;
+  }
+  to {
+    right: 10px;
+  }
 }
 @media only screen and (max-width: 1100px) {
   .articles .container {
-    grid-template-columns: repeat(3 , 1fr);
-    
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-@media only screen and (max-width:850px) {
+@media only screen and (max-width: 850px) {
   .articles .container {
-    grid-template-columns: repeat(2 , 1fr);
-    
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-@media only screen and (max-width:650px) {
+@media only screen and (max-width: 650px) {
   .articles .container {
-    grid-template-columns: repeat(1 , 1fr);
-    
+    grid-template-columns: repeat(1, 1fr);
   }
 }
