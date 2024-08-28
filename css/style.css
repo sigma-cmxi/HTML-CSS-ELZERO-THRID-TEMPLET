@@ -502,3 +502,125 @@ html {
 .gallary .card .frame:hover img {
   transform: rotate(5deg) scale(1.1);
 }
+.Features {
+  padding-bottom: var(--main-padding-bottom);
+  padding-top: var(--main-padding-top);
+  position: relative;
+}
+.Features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.Features .container .card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.Features .container .card .img {
+  position: relative;
+}
+.Features .container .card:nth-of-type(1) .img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(244 64 54 / 60%);
+}
+.Features .container .card:nth-of-type(2) .img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0 150 136 / 60%);
+}
+.Features .container .card:nth-of-type(3) .img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3 169 244 / 60%);
+}
+.Features .container .card img {
+  max-width: 100%;
+}
+.Features .container .card h3 {
+  position: relative;
+  font-size: 4rem;
+  text-align: center;
+  padding: 30px;
+}
+.Features .container .card:nth-of-type(1) h3::before {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 25%;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f44036;
+}
+.Features .container .card:nth-of-type(2) h3::before {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 15%;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #009688;
+}
+.Features .container .card:nth-of-type(3) h3::before {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 30%;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #03a9f4;
+}
+.Features .container .card p {
+  color: #777;
+  line-height: 1.8;
+  font-size: 2rem;
+  text-align: center;
+}
+.Features .container .card .bt {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.Features .container .card:nth-of-type(1) .bt button {
+  background-color: white;
+  border: #f44036 3px solid;
+  padding: 10px 30px;
+  font-size: 2rem;
+  text-align: center;
+  color: #f44036;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.Features .container .card:nth-of-type(2) .bt button {
+  background-color: white;
+  border: #009688 3px solid;
+  padding: 10px 30px;
+  font-size: 2rem;
+  text-align: center;
+  color: #009688;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.Features .container .card:nth-of-type(3) .bt button {
+  background-color: white;
+  border: #03a9f4 3px solid;
+  padding: 10px 30px;
+  font-size: 2rem;
+  text-align: center;
+  color: #03a9f4;
+  font-weight: bold;
+  border-radius: 5px;
+}
