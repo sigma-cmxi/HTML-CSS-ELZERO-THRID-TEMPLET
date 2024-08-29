@@ -555,9 +555,9 @@ html {
   transition: all var(--main-transition) ease;
 }
 .Features .container .card:hover .img::after {
-  rotate: 254deg;
   background-color: transparent;
-  left: -60%;
+  bottom: -100%;
+  left: 30%;
 }
 .Features .container .card img {
   max-width: 100%;
