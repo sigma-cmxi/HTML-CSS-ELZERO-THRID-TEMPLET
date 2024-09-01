@@ -706,3 +706,67 @@ html {
   left: 0;
   opacity: 1;
 }
+.Testimonials {
+  position: relative;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-color: #eee;
+  z-index: 1;
+}
+.Testimonials .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(300px , 1fr ));
+  gap: 40px;
+}
+.Testimonials .container .card {
+  position: relative;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 7%);
+}
+.Testimonials .container .img {
+  position: absolute;
+  top: -25%;
+  right: 0;
+  background-color: #eee;
+  padding: 10px;
+  border-radius:  50%;
+  width: 100px;
+  height: auto;
+  z-index: 2;
+}
+.Testimonials .container .img img {
+  max-width: 100%;
+  border-radius:  50%;
+}
+.Testimonials .container .content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.Testimonials .container .content h3 {
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+}
+.Testimonials .container .content p:nth-of-type(1) {
+  color: #777;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+.Testimonials .container .content .icns {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+.Testimonials .container .content .icns i {
+font-size: 1.6rem;
+padding-bottom: 10px;
+}
+.Testimonials .container .content .icns i.fa-solid {
+  color: orange;
+}
+.Testimonials .container .content p:nth-of-type(2) {
+  color: #777;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
